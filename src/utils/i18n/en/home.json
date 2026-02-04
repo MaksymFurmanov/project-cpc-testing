@@ -1,0 +1,52 @@
+{
+  "aboutKosice": {
+    "title": "KOŠICE",
+    "text": "Košice is an open and friendly city that warmly welcomes foreigners coming for work, study, or business. It offers diverse opportunities for professional development, quality educational institutions, and a favorable business environment. With its rich culture, vibrant social life, and multicultural atmosphere, Košice has become a place where people from different countries feel at home. The people of Košice are known for their hospitality and willingness to help foreigners integrate into the local community."
+  },
+  "aboutUsBrief": {
+    "title": "Foreigners' Support Center",
+    "text": "The goal of the Municipality of Košice is to systematically develop support for the newcomers. That is why the Foreigners' Support Center operates within its structure, providing its services through the First Contact Office for foreigners.",
+    "contactsButton": "Contacts"
+  },
+  "services": {
+    "title": "Our Services",
+    "schools": "Finding schools/nursery schools",
+    "translation": "Translation and assistance",
+    "institutions": "First contact with Košice institutions",
+    "police": "Foreign Police: legalization",
+    "print": "Filling out applications/forms",
+    "integrationService": "Comprehensive integration counseling"
+  },
+  "contactMaps": {
+    "title": "Contact us",
+    "phone": "Phone",
+    "email": "Email",
+    "openingHours": "Opening hours",
+    "lunchBreak": "Lunch break",
+    "days": {
+      "monday": "Monday",
+      "tuesday": "Tuesday",
+      "wednesday": "Wednesday",
+      "thursday": "Thursday",
+      "friday": "Friday"
+    }
+  },
+  "heroSection": {
+    "welcomeMsg": "Welcome to Košice"
+  },
+  "steps": {
+    "header": "Get in Touch",
+    "step1": {
+      "title": "Contact us",
+      "text": "Visit one of our support center offices or call us to arrange an appointment."
+    },
+    "step2": {
+      "title": "Explain your situation",
+      "text": "Tell us what kind of help you need or what are the difficulties you are facing in integrating into the city of Košice."
+    },
+    "step3": {
+      "title": "Follow the advices of our colleagues",
+      "text": "We will do everything in our power to help you."
+    }
+  }
+}

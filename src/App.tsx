@@ -8,6 +8,7 @@ import Activities from "./pages/activities";
 import Footer from "./components/footer";
 import Activity from './pages/activity';
 import ImmigrantsMap from "./pages/immigrants-map";
+import {Worker} from '@react-pdf-viewer/core';
 
 function App() {
     const [sidebarToggle, setSidebarToggle] = useState<boolean>(false);
@@ -21,31 +22,33 @@ function App() {
     }
 
     return (
-        <BrowserRouter>
-            <main>
-                <NavSidebar sidebarToggle={sidebarToggle} closeIfOpened={closeIfOpened}/>
-                <div className={`content ${sidebarToggle && 'moveContent'}`}
-                     onClick={() => {
-                         closeIfOpened();
-                     }}>
-                    <Header sidebarToggle={sidebarToggle}
-                            toggleSidebar={toggleSidebar}
-                    />
+        <Worker workerUrl="/pdf.worker.min.js">
+            <BrowserRouter>
+                <main>
+                    <NavSidebar sidebarToggle={sidebarToggle} closeIfOpened={closeIfOpened}/>
+                    <div className={`content ${sidebarToggle && 'moveContent'}`}
+                         onClick={() => {
+                             closeIfOpened();
+                         }}>
+                        <Header sidebarToggle={sidebarToggle}
+                                toggleSidebar={toggleSidebar}
+                        />
 
-                    <Routes>
-                        <Route index element={<Home/>}/>
+                        <Routes>
+                            <Route index element={<Home/>}/>
 
-                        <Route path={"/activities/:page"} element={<Activities/>}/>
+                            <Route path={"/activities/:page"} element={<Activities/>}/>
 
-                        <Route path={"/activity/:id"} element={<Activity/>}/>
+                            <Route path={"/activity/:id"} element={<Activity/>}/>
 
-                        <Route path={"/immigrants-map"} element={<ImmigrantsMap/>}/>
-                    </Routes>
+                            <Route path={"/immigrants-map"} element={<ImmigrantsMap/>}/>
+                        </Routes>
 
-                    <Footer/>
-                </div>
-            </main>
-        </BrowserRouter>
+                        <Footer/>
+                    </div>
+                </main>
+            </BrowserRouter>
+        </Worker>
     );
 }
 

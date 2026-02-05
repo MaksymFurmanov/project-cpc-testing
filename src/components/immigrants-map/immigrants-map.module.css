@@ -13,8 +13,12 @@
 
 .pdfContainer {
     width: min(70em, 80dvw);
-    height: 82dvh;
+    height: 100%;
     margin: 1.5em auto;
+}
+
+.pdfContainer :global(.rpv-core__viewer) {
+    height: 100dvh !important;
 }
 
 .callUs {

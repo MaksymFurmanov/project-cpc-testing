@@ -1,7 +1,7 @@
 const navLinks = [
     {
-        label: 'contacts',
-        url: `/#contacts`,
+        label: 'aboutUsLink',
+        url: `/`,
     },
     {
         label: 'activities',

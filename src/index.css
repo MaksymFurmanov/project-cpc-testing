@@ -9,5 +9,17 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  monospace;
+}
+
+body.embedded #embedBottomBarContainer {
+  display: none;
+}
+
+.not-selectable, button {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  -webkit-tap-highlight-color: transparent;
 }

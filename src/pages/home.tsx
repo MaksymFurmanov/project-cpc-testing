@@ -4,6 +4,7 @@ import ServisSection from "../components/home/services";
 import AboutKosice from "../components/home/about-kosice";
 import AboutUsBrief from "../components/home/about-us-brief";
 import Steps from "../components/home/steps";
+import ImmigrantsMapPreview from "../components/home/immigrants-map-preview";
 
 export default function Home() {
     return (
@@ -12,6 +13,7 @@ export default function Home() {
             <AboutUsBrief/>
             <ServisSection/>
             <AboutKosice/>
+            {/*<ImmigrantsMapPreview/>*/}
             <Steps/>
             <ContactsMaps />
         </main>

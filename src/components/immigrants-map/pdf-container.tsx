@@ -3,10 +3,12 @@ import styles from "./immigrants-map.module.css";
 export default function PdfContainer() {
     return (
         <div className={styles.pdfContainer}>
-            <iframe
-                src="/pdf/immigrants-map.pdf"
+            <embed
+                src={"/pdf/immigrants-map.pdf"}
                 className={styles.pdf}
-                title="PDF viewer"
+                type={"application/pdf"}
+                width={"100%"}
+                height={"100%"}
             />
         </div>
     );
